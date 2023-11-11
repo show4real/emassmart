@@ -1,6 +1,6 @@
 /node_modules
 /public/hot
-/public/images/*
+# /public/images/*
 /public/mix-manifest.json
 
 #/public/frontend/js/frontendChunks/*
@@ -12,7 +12,7 @@
 /public/public/frontend/js/app.js
 /public/public/frontend/js/app.js.gz
 /public/frontend/js/mix.js
-/public/files/*
+# /public/files/*
 /storage/*.key
 /vendor
 .env
