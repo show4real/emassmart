@@ -103,6 +103,8 @@ if (!function_exists('validate_purchase')):
 
         $curl_response = curlRequest("https://desk.spagreen.net/verify-installation-v2", $fields);
 
+        dd($curl_response);
+
         if($curl_response->release_sql_link == '' & $curl_response->release_zip_link == ''){
             return 'This purchase Code Already Used in Another Setup. Please continue with your previous setup domain name.';
         }
@@ -145,8 +147,8 @@ if (!function_exists('validate_purchase')):
 
             return 'success';
         else:
-            return $curl_response->message;
-        endif;
+           return $curl_response->message;
+         endif;
     }
 endif;
 
